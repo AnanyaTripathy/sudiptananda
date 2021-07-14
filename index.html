@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<style type="text/css">
+
+body {
+	font-family: Arial;
+	font-size: 20px;
+}
+
+.container1 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+  
+</style>
+		
+		
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>  
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#academy" class="nav__link">Academy</a></li>
+                        <li class="nav__item"><a href="#workshops" class="nav__link">Workshops</a></li>
+						<li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
+						<li class="nav__item"><a href="#blogs/reviews" class="nav__link">Blogs/Reviews</a></li>
+		                <li class="nav__item"><a target="_blank" href="media.html">Media</a></li>
+						<li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+						<li class="bx bx-moon" id="darkmode"></li>
+						
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi I am <span class="home__title-color"><div id="container"></h1>
+					    <h1 class="home__title-color"><div id="text"></div></h1>
+                    </div></span></h1>	
+                    									
+<script type="text/javascript">
+// List of sentences
+var _CONTENT = [ "Sudipta Nanda","Tae Kwon Do Coach","International Referee","Managing Director of SNT Academy","Biker","Professional Photographer"]
+// Current sentence being processed
+var _PART = 0;
+
+// Character number of the current sentence being processed 
+var _PART_INDEX = 0;
+
+// Holds the handle returned from setInterval
+var _INTERVAL_VAL;
+
+// Element that holds the text
+var _ELEMENT = document.querySelector("#text");
+
+// Implements typing effect
+function Type() { 
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX++;
+
+	// If full sentence has been displayed then start to delete the sentence after some time
+	if(text === _CONTENT[_PART]) {
+		clearInterval(_INTERVAL_VAL);
+		setTimeout(function() {
+			_INTERVAL_VAL = setInterval(Delete, 50);
+		}, 1000);
+	}
+}
+
+// Implements deleting effect
+function Delete() {
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX--;
+
+	// If sentence has been deleted then start to display the next sentence
+	if(text === '') {
+		clearInterval(_INTERVAL_VAL);
+
+		// If last sentence then display the first one, else move to the next
+		if(_PART == (_CONTENT.length - 1))
+			_PART = 0;
+		else
+			_PART++;
+		_PART_INDEX = 0;
+
+		// Start to display the next sentence after some time
+		setTimeout(function() {
+			_INTERVAL_VAL = setInterval(Type, 100);
+		}, 200);
+	}
+}
+
+// Start the typing effect on load
+_INTERVAL_VAL = setInterval(Type, 100);
+
+</script>				
+</div>          <div class="social">
+                    <div class="home__social">
+                       <a href="https://www.facebook.com/Sudiptananda1985"><i class='bx bxl-facebook'></i></a>
+                       <a href="https://www.instagram.com/sudiptanandadas"><i class='bx bxl-instagram'></i></a>
+                       <a href="https://twitter.com/sudiptananda1"><i class='bx bxl-twitter'></i></a>
+                     </div>
+
+                <div class="home__img">    
+                    <img src="girl.jpg" alt="">
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about">
+                        <img src="india.jpeg" alt="">
+                    </div>
+                    
+                        <div>
+                        <h2 class="about__subtitle">I am Sudipta</h2>
+                        <p class="about__text"> I consider myself as a student although I am an internationally acclaimed Tae Kwon do 
+						instructor so a lot of what you will see here is less about technique and tradition 
+						and MORE about encouragement, inspiration and well…fun! I have made some wonderful connections all over the world 
+						with others who love all kinds of martial arts for fun and fitness. 
+						I’ve also found many experience the same ‘game-changing’ effect as me. </p>           
+                        </div>
+						
+				</div>	
+            </section>	
+            
+
+            <!--=====SKILLS-ACADEMY =====-->
+            <section class="academy section" id="academy">
+                <h2 class="section-title">Academy-<br><br>Build your skills and personality-What tae kwon do teaches ?</h2>
+				<div class="skills__container bd-grid">
+                    <div>
+                        <h3 class="interests__subtitle">Self Confidence</h3>
+						<h3 class="interests__subtitle">Discipline</h3>
+						<h3 class="interests__subtitle">Flexibility and better coordination</h3>
+						<h3 class="interests__subtitle">Team spirit and improved social skills</h3>
+						<h3 class="interests__subtitle">Mental stamina</h3>
+						<h3 class="interests__subtitle">Patience</h3> 
+						<h3 class="interests__subtitle">Humility</h3>
+                    </div>                                   
+                </div>
+				
+				
+
+
+            <!--===== WORKSHOPS =====-->
+            <section class="workshops section" id="workshops">
+                <h2 class="section-title">Workshops<br></h2>
+				
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <img src="W1.jpeg" alt="">
+						A two day self defense training program conducted by Innerwheel Club at Basundhara(A shelter for women and orphans in Cuttack)
+                    </div>
+					<div class="work__img">
+                        <img src="W5.jpeg" alt="">					
+                    </div>
+					<div class="work__img">
+                        <img src="W7.jpeg" alt="">					
+                    </div>
+					<div class="work__img">
+                        <img src="W2.jpeg" alt="">
+                    </div>
+					<div class="work__img">
+                        <img src="W3.jpeg" alt="">					
+                    </div>
+					<div class="work__img">
+                        <img src="W4.jpeg" alt="">					
+                    </div>
+					<div class="work__img">
+                        <img src="W6.jpeg" alt="">					
+                    </div>
+                    <div class="work__img">
+                        <img src="W8.jpeg" alt="">					
+                    </div>
+					<div class="work__img">
+                        <img src="W9.jpeg" alt="">					
+                    </div>
+					<div class="work__img">
+                        <img src="W10.jpeg" alt="">					
+                    </div>
+                    <div class="work__img">
+                        <img src="W11.jpeg" alt="">					
+                    </div>
+					<div class="work__img">
+                        <img src="W12.jpeg" alt="">					
+                    </div>
+                    
+                </div>
+			</section>
+
+            <!--===== GALLERY=====-->
+            <section class="gallery section" id="gallery">
+                <h2 class="section-title">Gallery<br><br>Achievements and Memories</h2>
+				
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <img src="A1.jpeg" alt="">					
+                    </div>
+					<div class="work__img">
+                        <img src="A2.jpeg" alt="">					
+                    </div>
+					<div class="work__img">
+                        <img src="A3.jpeg" alt="">					
+                    </div>
+					<div class="work__img">
+                        <img src="A5.jpeg" alt="">					
+                    </div>
+                    <div class="work__img">
+                        <img src="A7.jpeg" alt="">					
+                    </div>
+					<div class="work__img">
+                        <img src="A8.jpeg" alt="">					
+                    </div>
+					<div class="work__img">
+                        <img src="A9.jpeg" alt="">					
+                    </div>
+                    <div class="work__img">
+                        <img src="A10.jpeg" alt="">					
+                    </div>
+					<div class="work__img">
+                        <img src="A11.jpeg" alt="">					
+                    </div>
+					<div class="work__img">
+                        <img src="G0.jpeg" alt="">					
+                    </div>
+					<div class="work__img">
+                        <img src="G1.jpeg" alt="">					
+                    </div>
+					<div class="work__img">
+                        <img src="G2.jpeg" alt="">					
+                    </div>
+                    <div class="work__img">
+                        <img src="G3.jpeg" alt="">					
+                    </div>
+                    <div class="work__img">
+                        <img src="G5.jpeg" alt="">					
+                    </div>
+					<div class="work__img">
+                        <img src="G6.jpeg" alt="">					
+                    </div>
+                    <div class="work__img">
+                        <img src="G8.jpeg" alt="">					
+                    </div>
+					<div class="work__img">
+                        <img src="G9.jpeg" alt="">					
+                    </div>
+					<div class="work__img">
+                        <img src="G10.jpeg" alt="">					
+                    </div>
+					<div class="work__img">
+                        <img src="G11.jpeg" alt="">					
+                    </div>
+					<div class="work__img">
+                        <img src="G12.jpeg" alt="">					
+                    </div>
+                    <div class="work__img">
+                        <img src="G15.jpeg" alt="">					
+                    </div>
+					<div class="work__img">
+                        <img src="G4.jpeg" alt="">					
+                    </div>
+					<div class="work__img">
+                        <img src="G13.jpeg" alt="">					
+                    </div>
+					<div class="work__img">
+                        <img src="G14.jpeg" alt="">					
+                    </div>
+					<div class="work__img">
+                        <img src="A4.jpeg" alt="">					
+                    </div>
+					<div class="work__img">
+                        <img src="G7.jpeg" alt="">					
+                    </div>
+					<div class="work__img">
+                        <img src="A6.png" alt="">					
+                    </div>
+				
+                </div>
+			</section>
+
+			
+			<!--===== BLOGS/REVIEWS =====-->
+			<section class="blogs/reviews section " id="blogs/reviews">
+                <h2 class="section-title">Blogs/Reviews</h2>
+
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <img src="R1.jpeg" alt="">					
+                    </div>
+					<div class="work__img">
+                        <img src="R2.jpeg" alt="">					
+                    </div>
+ 					<div class="work__img">
+                        <img src="R3.jpeg" alt="">
+						 "Mastery over your own body gives you mastery over your own destiny.” <br>
+                         Muhammad Ali once said, it is not the mountains ahead that wear you out, but the pebble in your shoe.
+						 Tae Kwon Do helped me avoid my numerous sensory distractions and improved my focus which helped me in my other aspects if life. 
+						 <br>
+						 -ANANYA TRIPATHY
+                    </div>  
+                </div>
+            </section>
+			
+			
+			<!--===== CONTACTS =====-->
+			<section class="contact section " id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="interests__container bd-grid">
+                    <div>
+                        <a href="https://sn-taekwondo-academy.business.site/"><i class='bx bxl-google'>Website </i></a><br>			
+						<a href="https://www.google.com/maps/dir//S.N+Taekwondo+Academy/"><i class='bx bxl-google'>Google map link</i></a>
+                    </div>                                   
+                </div>
+            </section>
+			
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Sudipta Nanda</p>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/Sudiptananda1985" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/sudiptanandadas" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+				<a href="https://twitter.com/sudiptananda1" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+            </div>
+            <p>2021-Ananya Tripathy @copyright all rights reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="main.js"></script>
+    </body>
+</html>

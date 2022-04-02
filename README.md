@@ -1,2 +1,2 @@
-# sudiptananda.github.io
-Portfolio website of Sudipta nanda
+# Sudipta Nanda
+Portfolio website of Sudipta Nanda
